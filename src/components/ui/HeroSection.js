@@ -3,8 +3,17 @@ import Button from '../common/Button';
 
 function HeroSection() {
     return (
-        <section className="bg-[#E8F5E9] flex items-center py-8 md:py-16 lg:py-0 lg:min-h-[900px]">
-            <div className="container mx-auto max-w-[1446px] px-4 lg:px-8">
+        <section className="bg-[#E8F5E9] flex flex-col items-center">
+            {/* Prototype Notice Bar */}
+            <div className="w-full bg-[#A68966] py-2 px-4 shadow-sm z-10">
+                <div className="container mx-auto max-w-[1446px] flex items-center justify-center gap-2">
+                    <span className="text-white text-[10px] md:text-sm font-poppins font-semibold text-center leading-tight">
+                          This is a high-fidelity design prototype. Production-grade functionality and complete integration will be delivered upon project confirmation.
+                    </span>
+                </div>
+            </div>
+
+            <div className="container mx-auto max-w-[1446px] px-4 lg:px-8 py-8 md:py-16 lg:py-0 lg:min-h-[900px] flex items-center">
                 <div className="flex flex-row items-center gap-2 sm:gap-8 lg:gap-12">
                     {/* Left Column - Text Content (Always Left) */}
                     <div className="flex-[1.2] sm:flex-1 flex flex-col justify-center text-left">
